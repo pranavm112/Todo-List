@@ -7,7 +7,8 @@ import TodoItem from './components/TodoItem'
 import ThemeBtn from './components/ThemeBtn'
 import { ThemeProvider } from './contexts/theme'
 
-const BASE_URL = "http://localhost:3000/api/todos"
+const BASE_URL = process.env.REACT_APP_API_URL;
+
 
 function App() {
 
